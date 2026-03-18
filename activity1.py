@@ -1,20 +1,13 @@
-print("hello i'am naisa")
-print("today iam going to talk about ramadan")
-print("so, in ramadan for sehri i wake up at 3:30PM")
-print("then i finish my sehri at 4:00pm")
-print("after that i watch my tablet for some time")
-print("then i brush and i go to sleep")
-print("after wakeup i play with my younger sister")
-print("then my tutor comes then i study for 1hour")
-print("then after my tutor go then i sleep for sometime")
-print("then i wakeup and then i help my mom to make iftar for us")
-print("after making iftar my sister help us to serve iftar on dining table")
-print("then after ajan we eat our iftar")
-print("after finish iftar i do my coding work")
-print("then i do my home work")
-print("after that i go outside with my dad")
-print("then i eat some chips and juice")
-print("then after coming home my mom makes rice for dinner")
-print("then after making rice we watch computer for like 1hour")
-print("after that i eat rice anf i sleep")
-print("then again i wakeup for sehri at 3:30PM")
+print("to the world of programming")
+
+#print a number
+print("print(4)")
+
+#next line after print
+print("hello python \n")
+
+#pass multiple arguments for printing
+print("hello",5)
+
+#end argument of print statement
+print("welcome to", end="*")
