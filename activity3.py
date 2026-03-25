@@ -1,12 +1,26 @@
-#let's check the datatype of different values a = 5
-a=5
-print("type of a: ", type (a))
+#assigning different variebles
+name = "penguin"
+age = 67
+is_student= True
+weight = 67.6
 
-b=6.7
-print("type of b: ",type(b))
+#printing different variebles and their data type
+print("Name :",name)
+print("data type of name is" ,type(name))
+print("age :",age)
+print("data type of age is" ,type(age))
 
-c="coding"
-print("type of c: ", type(c))
+print("is_student :",is_student)
+print("data type of is_student is" ,type(is_student))
 
-d=True
-print("type of d:",(d))
+print("is_student :",weight)
+print("data type of weight is" ,type(weight))
+
+#casting to convert the datatype of variebles
+print("\n after type casting ....")
+age = sty(age)
+print(age)
+print("data type of age is", type(age))
+weight = int(weight)
+print =(weight)
+print("data type of weight is",type(weight))
