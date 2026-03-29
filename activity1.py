@@ -1,13 +1,15 @@
-print("to the world of programming")
+# storing values
+tree1 = 67
+tree2 = 10
+tree3 = 76
+tree4 = 7
+tree5 = 42
+tree6 = 32
 
-#print a number
-print("print(4)")
+#finding the total of trees
+sum = tree1+tree2+tree3+tree4+tree5+tree6
+print("the sum of all the 6 trees is: ",sum)
 
-#next line after print
-print("hello python \n")
-
-#pass multiple arguments for printing
-print("hello",5)
-
-#end argument of print statement
-print("welcome to", end="*")
+#finding the average of trees
+average =sum/6
+print("the average of all the trees is: ",average)
