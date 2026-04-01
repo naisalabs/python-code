@@ -1,14 +1,9 @@
-#Print a Sentence 
-print("Welcome to the world of programming!")
+i = int(input("enter a number: "))
+if(i < 15):
+   print("i is smaller than 15")
+   print("i'am in if block")
+else:
+    print ("i is greater  than 15")
+    print("i'am in else block")
 
-#Print a Number
-print(4)
-
-#Next Line after print
-print("Hello Python \n")
-
-#Pass multiple arguments for printing
-print("hello",5)
-
-#End argument of Print Statement
-print("welcome to ", end= "*")
+print("i'm not in if and else block")
