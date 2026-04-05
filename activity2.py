@@ -1,9 +1,18 @@
-i = int(input("enter a number: "))
-if(i < 15):
-   print("i is smaller than 15")
-   print("i'am in if block")
-else:
-    print ("i is greater  than 15")
-    print("i'am in else block")
+a = 10
+b = 12
+c = 12
+print("a != b")#true
+print("b != c")#false
+a = "python"
+b = "coding"
+if a != b :
+    print(a, 'and', b, 'are different')#its print
+a = 4
+b = 5
+if (a == 1) != (b == 5): #false != true=false
+    print('hello')#its print
 
-print("i'm not in if and else block")
+    a = int(input("enter a number"))
+
+    if a%2 != 0 :
+        print(a, "its not even number")
