@@ -1,8 +1,21 @@
-num = 3
-if num > 0:
-   print(num,"is a positive number.")
+a = 10
+
+b = -10
 
 
-num = -1
-if num < 0:
-   print(num,"is a negtive number")
+
+print("a >> 1 =", a >> 1)
+
+print("b >> 1 =", b >> 1)
+
+
+a = 10
+
+b = -10
+
+
+
+
+print("a << 1 =", a << 1)
+
+print("b << 1 =", b << 1)
