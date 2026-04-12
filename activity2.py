@@ -1,23 +1,16 @@
-a = 12
-b = 10
-c = 0
-if a and b and c:
-    print("all the numbers have boolean value as true")
+v = 4
+w = 5
+x = 8
+y = 2
+z = 0
+z = (v + w) * x / y; #expression
+print("value of (v+w) * x / y is ", z)
+
+name = "alex"
+age = 0
+
+if name == "alex" or (name == "john" and age >= 2 ):
+    print("hello: welcome")
 else:
-    print("atleast one number has boiolean value as false ")
-
-
-    a = 10
-    b = -10
-    c = 0
-
-if a > 0 or b > 0:
-    print("either of the number is greater than 0")
-else:
-    print("no number is greater than 0")
-
-if b > 0 or c > 0:
-    print("either of the number is greater than 0")
-else:
-    print("no number is greater than 0")
-
+    print("good bye")
+    
