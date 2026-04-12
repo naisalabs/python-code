@@ -1,21 +1,9 @@
-a = 10
-b = 12
-c = 1
-if a and b and c:
-    print("all the numbers have boolean values as true")
-else:
-    print("atleast one number has boolean value as false")
+print("enter a number (numerator): ")
+numn = int(input())
+print("enter a number (denominator): ")
+numd = int(input())
 
-    a = 10
-    b = -10
-    c = 0
-
-if a > 0 or b> 0:
-        print("either of the number is greater than 0")
+if numn%numd==0:
+    print("\n" +str(numn)+ " is divisible by " +str(numd))
 else:
-    print("no number is greater than 0")
-
-if b > 0 or c >0:
-        print("either of the number is greater than 0")
-else:
-    print("no number is greater than 0")
+    print("\n" +str(numn)+ " is divisible by " +str(numd))
