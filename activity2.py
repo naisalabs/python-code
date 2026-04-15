@@ -1,16 +1,14 @@
-v = 4
-w = 5
-x = 8
-y = 2
-z = 0
-z = (v + w) * x / y; #expression
-print("value of (v+w) * x / y is ", z)
+# take input for the student that he ca attend the exam or not
+medical_cause = input("did you have a medical cause (y/n):").strip(). upper()
 
-name = "alex"
-age = 0
 
-if name == "alex" or (name == "john" and age >= 2 ):
-    print("hello: welcome")
+if medical_cause == 'Y':   # condition 1
+   print("you're allowed")
 else:
-    print("good bye")
-    
+   
+   atten = int(input("enter the attendence of the student: "))
+
+   if atten >= 75:   #condition 2
+       print("you're allowed")
+   else:
+        print("you're not allowed")
