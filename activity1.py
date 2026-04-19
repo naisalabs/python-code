@@ -1,15 +1,8 @@
-#Print a Sentence 
-print("Welcome to the world of programming!")
+#input an integer value
+n = int(input("enter the number whose sum you want to find: "))
+sum=0
 
-#Print a Number
-print(4)
-
-#Next Line after print
-print("Hello Python \n")
-
-#Pass multiple arguments for printing
-print("hello",5)
-
-#End argument of Print Statement
-print("welcome to ", end= "*")
-
+#iterates for n+1 times: i=1 to n+1
+for i in range(1, n+1):
+  sum = sum+1
+  print("/nsum=", sum)
