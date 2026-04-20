@@ -1,14 +1,11 @@
-mean1 = 38
-wrong_number = 36
-correct_number = 56
-total_number=40
-#sum if 40 number
-sum = mean1*total_number
-print("the sum of 40 number: ",sum)
+def power(base, exponent):
+    result - 1
+    for i in range(exponent):
+        result *= base
+    return result
+
+base = int(input("enter the base number: "))
+exponent = int(input("enter the base number: "))
 
 
-num2=sum-(wrong_number-correct_number)
-print("sum-((wrong_number)-(correct_number)): ",num2)
-
-mean2=num2/total_number
-print("mean2")
+print("result:", power(base, exponent))
