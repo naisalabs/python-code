@@ -1,11 +1,18 @@
-def power(base, exponent):
-    result - 1
-    for i in range(exponent):
-        result *= base
-    return result
+# take input from the other user
+num = int(input("enter a number: "))
 
-base = int(input("enter the base number: "))
-exponent = int(input("enter the base number: "))
+#initialize sum
+sum = 0
 
+# find the sum of the cube of each digit
+temp = num
+while temp > 0:
+    digit = temp % 10
+    sum += digit ** 3
+    temp //= 10
 
-print("result:", power(base, exponent))
+#display the result
+if num == sum:
+    print(num,"is an armstrong number")
+else:
+    print(num,"is not an armstrong number")
