@@ -1,9 +1,8 @@
-#input number greater than 1
-n = int(input("enter the value of n: "))
-
-#print the numbers from n to 1
-print("numbers from", n," to " ,1," are :")
-
-#loop to print numbers
-for i in range(n,0,-1):
-    print(i)
+# input the value of terms
+n = int(input("enter the value of terms: "))#5
+sum = 0 #initialise
+i = 1 #initialise
+while i<=n: # loop will run from to n 2<=5
+    sum = sum+i
+    i = i+1
+print("/nsum =", sum)
