@@ -1,11 +1,8 @@
-string = input("please enter your own word: ")
-char = input("please enter your own chaaracter: ")
-i = 0
-count = 0
-while(i < len(string)):
-    
-    if (string[i] == char):
-        count = count + 1
-    i = i + 1
-
-print("the total number of times", char,"has occured = ", count) 
+print("floyd's triangle :")
+n = int(input("enter the number of rows"))
+a=1
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print(a, end=" ")
+        a+=1
+    print()
