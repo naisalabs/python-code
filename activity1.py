@@ -1,15 +1,6 @@
-# take input from the user
-num = int(input("enter a number"))
-# intialize sum
-sum = 0
-# find the sum of the cube ofeach digit
-temp = num
-while temp > 0:
-   digit = temp % 10
-   sum += digit ** 3
-   temp //= 10
-# display the result
-if num == sum:
-   print(num,"is an amazing armstrong number")
-else:
-   print(num,"is not an armstrong number")
+print("half pyramid pattern of stars (*):")
+n = int(input("enter the number of rows"))
+for i in range (n):
+    for j in range(i+1):
+        print("* ",end="")
+    print()
