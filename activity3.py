@@ -1,8 +1,13 @@
-# input the value of terms
-n = int(input("enter the value of terms: "))#5
-sum = 0 #initialise
-i = 1 #initialise
-while i<=n: # loop will run from to n 2<=5
-    sum = sum+i
-    i = i+1
-print("/nsum =", sum)
+n = int(input("enter the number of rows: "))
+for i in range(1, n + 1):
+    print(" " * (n - i), end="")
+    for j in range(1,2 * i):
+        print(j,end="")
+    print()
+#bottom part
+for i in range(n - 1, 0, -1):
+
+    print(" " * (n - i), end="")
+    for j in range(1,2 * i):
+        print(j,end="")
+    print()
