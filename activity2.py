@@ -1,8 +1,25 @@
-print("floyd's triangle :")
-n = int(input("enter the number of rows"))
-a=1
-for i in range(1,n+1):
-    for j in range(1,n+1):
-        print(a, end=" ")
-        a+=1
-    print()
+import turtle
+turtle.Screen().bgcolor("yellow")
+board = turtle.Turtle()
+#first triangle for star
+board.forward(100) #draw base
+board.left(120)
+board.forward(100)
+
+board.left(120)
+board.forward(100)
+
+board.penup()
+board.right(150)
+board.forward(50)
+#decond triangle for star
+board.pendown()
+board.right(90)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+
+board.right(120)
+board.forward(100)
+turtle.done
