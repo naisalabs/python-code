@@ -1,13 +1,12 @@
-n = int(input("enter the number of rows: "))
-for i in range(1, n + 1):
-    print(" " * (n - i), end="")
-    for j in range(1,2 * i):
-        print(j,end="")
-    print()
-#bottom part
-for i in range(n - 1, 0, -1):
+import turtle
+my_wn = turtle.Screen()
+my_wn.bgcolor("light blue")
 
-    print(" " * (n - i), end="")
-    for j in range(1,2 * i):
-        print(j,end="")
-    print()
+my_pen = turtle.Turtle()
+size = 0
+while True:
+  for i in range (4):
+    my_pen.fd(size + 1)
+    my_pen. left(90)
+    size = size - 5
+    size = size + 1
