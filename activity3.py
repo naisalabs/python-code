@@ -1,5 +1,13 @@
-def well_wishes():
-    print("hello")
-    print("how are you?")
+def cube(number):
+    return number*number*number
 
-well_wishes()
+
+
+def by_three(number):
+    if number %3 ==0:
+        return cube(number)
+    else:
+        return False
+#isplay result
+print(by_three(9))
+print(by_three(4))
