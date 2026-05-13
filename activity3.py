@@ -1,13 +1,15 @@
-def cube(number):
-    return number*number*number
+for x in range(10): 
+    if x % 20 == 0:
+       print("twist")
 
+    elif x % 15 == 0:
+       pass
+    
+    elif x % 5 == 0:
+       print("fizz")
+    
+    elif x % 3 == 0:
+       print("buzz")
 
-
-def by_three(number):
-    if number %3 ==0:
-        return cube(number)
     else:
-        return False
-#isplay result
-print(by_three(9))
-print(by_three(4))
+       print("x")
