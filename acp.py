@@ -1,18 +1,5 @@
-# take input from the other user
-num = int(input("enter a number: "))
+bill_amount = float(input("enter total bill amount: "))
+paid_amount = float(input("enter paid amount"))
 
-#initialize sum
-sum = 0
-
-# find the sum of the cube of each digit
-temp = num
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** 3
-    temp //= 10
-
-#display the result
-if num == sum:
-    print(num,"is an armstrong number")
-else:
-    print(num,"is not an armstrong number")
+due_amount = bill_amount - paid_amount
+print("customar due amount =", due_amount)
