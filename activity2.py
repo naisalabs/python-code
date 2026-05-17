@@ -1,7 +1,9 @@
-a = input ("Enter a word: ")
-for i in a :
-    if  (i == 'A'):
-        print ("A in found")
-        break
-    else:
-        print("A is not found")
+valid = False
+while not valid:
+    try:
+        n=int(input("enter you number: "))
+        #enter a even  number
+        while n%2==0:
+          valid = True
+    except ValueError:
+      print("invalid")
