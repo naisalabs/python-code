@@ -1,5 +1,7 @@
-bill_amount = float(input("enter total bill amount: "))
-paid_amount = float(input("enter paid amount"))
-
-due_amount = bill_amount - paid_amount
-print("customar due amount =", due_amount)
+#using try and except
+try:
+    number = int(input("enter a number:"))
+    print("the number entered is",number)
+#using value error
+except ValueError as ex:
+    print("exception:",ex)
