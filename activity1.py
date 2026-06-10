@@ -1,20 +1,13 @@
-try:
-    num1, num2 = eval(input("enter two numbers, separated by coma: "))
-    result = num1 / num2
-    print("result is",result)
-#using multiple except block for different type errr
+def match_words(words):
+    ctr = 0
+    lst = []
+    for word in words:
+        if len (word) > 1 and word[0] == word[-1]:
+            ctr += 1
+            lst.append(word)
 
-except ZeroDivisionError:
-    print("division by error is error")
+    print("list od words with first and last character same\n", lst)
+    return ctr
 
-except SyntaxError:
-    print("coma is missing")
-
-except:
-    print("wrong input")
-
-else:
-    print("no exceptions")
-
-finally:
-    print("this will execute no matter what happend")
+count= match_words(['abc','cbc','xyz', 'aba', '112341'])
+print = match_words("number of words having first and last character same:", count)
