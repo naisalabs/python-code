@@ -1,9 +1,16 @@
-valid = False
-while not valid:
-    try:
-        n=int(input("enter you number: "))
-        #enter a even  number
-        while n%2==0:
-          valid = True
-    except ValueError:
-      print("invalid")
+L = [4, 5, 1, 2, 9, 7, 10, 8,]
+print("original list: ", L)
+count = 0
+
+for i in L:
+    count += i
+
+avg = count/len(L)
+print("sum = ", count)
+print("average =", avg)
+
+L.sort()
+print("smallest element is:", L[0])
+
+
+print("largest element is:", L[-1])
