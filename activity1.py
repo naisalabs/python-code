@@ -1,13 +1,11 @@
-def match_words(words):
-    ctr = 0
-    lst = []
-    for word in words:
-        if len (word) > 1 and word[0] == word[-1]:
-            ctr += 1
-            lst.append(word)
+def multiply_tuple(numbers):
+    product = 1
+    for num in numbers:
+        product *= num
+        return product
+    
+t = (2,3,4,5)
 
-    print("list od words with first and last character same\n", lst)
-    return ctr
+result = multiply_tuple(t)
+print("product of tuple elements:",result)
 
-count= match_words(['abc','cbc','xyz', 'aba', '112341'])
-print = match_words("number of words having first and last character same:", count)
