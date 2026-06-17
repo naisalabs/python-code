@@ -1,15 +1,13 @@
-#create and empty list
-empty_list = []
-print("empty_list")
+weather=(1,0,0,0,1,1,0)
+sunny=0
+rainy=1
+for i in range(0,7):
+    if(weather[i]==0):
+        rainy+=1
+    else:
+        sunny+=1
 
-#a list of numbers
-numbers = [1, 2, 3, 4, 5,]
-print(numbers)
-
-#use * operator
-triples = [1, 2, 3,] * 3
-print(triples)
-# reverse rthe given list
-aList = [100, 200, 300, 400, 500,]
-aList = aList[::-1]
-print(aList,"\n")
+if(sunny>rainy):
+    print("good weather")
+else:
+    print("bad weather")
