@@ -1,16 +1,15 @@
-L = [4, 5, 1, 2, 9, 7, 10, 8,]
-print("original list: ", L)
-count = 0
+tuplex = ("tuple", False, 3.2, 1)
+print(tuplex)
+tuplex =(4, 6, 2, 8, 1,)
+print(tuplex)
+tuplex = tuplex + (9,)
+print(tuplex)
 
-for i in L:
-    count += i
-
-avg = count/len(L)
-print("sum = ", count)
-print("average =", avg)
-
-L.sort()
-print("smallest element is:", L[0])
-
-
-print("largest element is:", L[-1])
+tuple1 = (50, 10, 60, 70, 50,)
+print("tuple1.count(50))")
+tuplex =(2, 4, 3, 5, 4, 6, 7, 8, 6, 1)
+_slice = tuplex[3:5]
+print(_slice)
+_slice = tuplex[:6]
+print(_slice)
+                
