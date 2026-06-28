@@ -1,9 +1,11 @@
-set1 = set(map(int, input("enter elemnts of set 1 separated by spaces: "
-    ).split()))
+numbers1 = [1,2,3]
+numbers2 = [4,5,6]
+result = map(lambda x,y: x + y, numbers1,numbers2)
+print("additon of two lists")
+print(list(result))
 
-set2 = set(map(int, input("enter elemnts of set 2 separated by spaces: "
-    ).split()))
-
-result = set1.symmetric_difference(set2)
-
-print("symmetric Different:", result)
+nums = [1,2,3,4,5]
+def sq(n):
+    return n*n
+square = list(map(sq, nums))
+print(square)
