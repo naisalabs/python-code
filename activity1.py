@@ -1,10 +1,18 @@
-import array as arr
+s1 = {2,3,1}
+s2 = {'b','a','c'}
+s3 = list(zip(s1,s2))
+print(s3,"\n")
 
-array_num = arr.array('i',[1,2,5,3,7,5])
-print("original array: "+str(array_num))
 
-print("number of occurrences of the number 3 in the said array: "+str(array_num.count(3)))
 
-array_num.reverse()
-print("reverse the order of the items:")
-print(str(array_num))
+list1 = [10,20,3,40]
+list2 = [100,200,300,400]
+for x,y in zip(list1, list2[::-1]):
+    print(x,y)
+
+stocks = ['reliance', 'infosys', 'tcs']
+prices = [2175,1127,2750]
+new_dict = {stocks: prices for stocks,
+            prices in zip(stocks, prices)}
+
+print('\n{}'.format(new_dict))
