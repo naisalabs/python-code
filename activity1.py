@@ -1,18 +1,9 @@
-s1 = {2,3,1}
-s2 = {'b','a','c'}
-s3 = list(zip(s1,s2))
-print(s3,"\n")
+country_code = {"india","0098",
+                "australia","0067",
+                "japan","8765"}
+print("country_code for india _")
+print("country_code.get'india",not found)
 
-
-
-list1 = [10,20,3,40]
-list2 = [100,200,300,400]
-for x,y in zip(list1, list2[::-1]):
-    print(x,y)
-
-stocks = ['reliance', 'infosys', 'tcs']
-prices = [2175,1127,2750]
-new_dict = {stocks: prices for stocks,
-            prices in zip(stocks, prices)}
-
-print('\n{}'.format(new_dict))
+print("country_code for japan _")
+print("country_code.get('japan'),not found")
+      
