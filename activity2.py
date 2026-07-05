@@ -1,6 +1,13 @@
-for i in range(10):
+class vehicle:
+    def __init__(self,max_speed,mileage):
 
-    if i == 5:
-        print(exit)
-        exit()
-    print(i)
+
+        self.max_speed = max_speed
+        self.mileage = mileage
+
+
+modelX = vehicle(240, 18)
+
+
+print("model max speed:",modelX.max_speed)
+print("model mileage:",modelX.mileage)
