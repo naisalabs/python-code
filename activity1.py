@@ -1,9 +1,15 @@
-country_code = {"india","0098",
-                "australia","0067",
-                "japan","8765"}
-print("country_code for india _")
-print("country_code.get'india",not found)
+class parrot:
+    species = "bird"
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-print("country_code for japan _")
-print("country_code.get('japan'),not found")
-      
+blu = parrot("blu",10)
+woo =parrot("woo",15)
+
+
+print("blu is a {}".format(blu.species))
+print("woo is also a {}".format(woo.species))
+
+print("{} is {} years old".format( blu.name, blu.age))
+print("{} is {} years old".format( woo.name, woo.age))
