@@ -1,15 +1,16 @@
-class parrot:
-    species = "bird"
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+# create a class
+class pair_elements:
+	
+	def twoSum(self, nums, target):
+		# create an empty dictionary
+		lookup = {}
 
-blu = parrot("blu",10)
-woo =parrot("woo",15)
+		# Iterate through the tuple
+		for i, num in enumerate(nums):
+			if target - num in lookup:
+				return (lookup[target - num], i )
+			lookup[num] = i
 
-
-print("blu is a {}".format(blu.species))
-print("woo is also a {}".format(woo.species))
-
-print("{} is {} years old".format( blu.name, blu.age))
-print("{} is {} years old".format( woo.name, woo.age))
+# take input of dum from the user
+value = int(input("Enter sum for which you want to make this search : "))
+print("index1=%d, index2=%d" % pair_elements().twoSum((10,20,30,40,50,60,70),value))
