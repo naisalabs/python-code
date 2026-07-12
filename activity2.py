@@ -1,15 +1,17 @@
-class Employee:
+class person(object ):
+    
+    def __init__(self, name, idnumber):
+        self.name = name
+        self.idnumber = idnumber
+    def display(self):
+        print(self.name)
+        print(self.idnumber) 
+#child class
+class Employee(person ):
+    def __init__(self,name,idnumber, salary, post):
+        self.salary = salary
+        self.post = post
+        person.__init__(self, name, idnumber)
 
-    def __init__(self):
-        print('Employee created')
-    #calling destructor
-    def __del__(self):
-        print("destructor called")
-def create_obj():
-    print('making object...')
-    obj = Employee()
-    print('function end...')
-    return obj
-print('calling create_obj() function...')
-obj = create_obj()
-print('program End')
+a = Employee('Rahul',886012,200000,"intern")
+a.display()
