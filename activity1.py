@@ -1,10 +1,16 @@
-class vehicle:
-    def __init__(self,name,max_speed,mileage):
-        self.name = name
-        self.max_speed = max_speed
-        self.mileage = mileage
-class bus(vehicle):
-    pass
-school_bus = bus("school volvo", 180, 12)
-print("vehicle name:",school_bus.name,"speed",school_bus.max_speed,
-      "mileage:",school_bus.mileage)
+class myclass:
+
+    # private var
+    _privatevar = 27;
+    
+    #private method
+    def __priMeth(self):
+        print("i am inside class myClass")
+
+    def hello(self):
+        print("private varieble value: ",myclass.__privatevar)
+
+
+foo = myclass()
+foo.hello()
+foo._priMeth
