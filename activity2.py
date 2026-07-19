@@ -1,17 +1,17 @@
-class person(object ):
-    
-    def __init__(self, name, idnumber):
-        self.name = name
-        self.idnumber = idnumber
-    def display(self):
-        print(self.name)
-        print(self.idnumber) 
-#child class
-class Employee(person ):
-    def __init__(self,name,idnumber, salary, post):
-        self.salary = salary
-        self.post = post
-        person.__init__(self, name, idnumber)
+class computer:
+    def __init__(self):
+        self.__maxprice = 900
+    def sell(self):
+        print("selling price: {}".format(self.__maxprice))
+    def setMaxprice(self, price):
+        self.__maxprice = price
+c = computer()
+c.sell()
 
-a = Employee('Rahul',886012,200000,"intern")
-a.display()
+# change the price
+c.__maxprice = 1000
+c.sell()
+
+# using setter function
+c.setMaxprice(1000)
+c.sell()
