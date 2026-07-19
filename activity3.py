@@ -1,22 +1,11 @@
-class bird:
-    def __init__(self):
-        print("bird is ready")
-    def whoisThis(self):
-        print("bird")
-    def swim(self):
-        print("swim faster")
+class point:
+    def __init__(self, x=0, y=0):
+        self.x = x
+        self.y = y
 
-class penguin(bird):
-    def __init__(self):
-
-        super().__init__()
-        print("penguin is ready")
-    def whoisThis(self):
-        print("penguin")
-    def run(self):
-        print(":run faster")
-#object creation
-peggy = penguin()
-peggy.whoisThis()
-peggy.swim()
-peggy.run()
+    
+    def __str__(self):
+        return "({0}, {1})" .format(self.x, self.y)
+    
+p1 = point(2,3 )
+print(p1)
