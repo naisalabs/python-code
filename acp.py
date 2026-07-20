@@ -1,15 +1,16 @@
-class Vehicle:
-    def __init__(self, fare):
-        self.fare = fare
+class ReverseString:
+    def reverse_words(self, text):
+        words = text.split()
+        reversed_words = words[::-1]
+        return " ".join(reversed_words)
+    
+# create and obj
+obj = ReverseString()
 
 
-class Bus(Vehicle):
-    def __init__(self, fare):
-        super().__init__(fare)
-        self.total_fare = fare + (fare * 10 / 100)   # 10% extra fare
+# get input from the user
+sentence = input("enter a sentence: ")
 
 
-bus = Bus(500)
-
-print("Base fare:", bus.fare)
-print("Total fare:", bus.total_fare)
+print("reversed sentence:")
+print(obj.reverse_words(sentence))
