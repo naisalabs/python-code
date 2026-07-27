@@ -1,16 +1,33 @@
-class myclass:
+#import packages
+from abc import ABC, abstractmethod
+#create a base cls
+class animal(ABC):
+    #abc method
+    #should be implemented by all sub-classes
+    def move(self):
+        pass
+#sub classes
+class human(animal):
+    def move(self):
+        print("i can walk and run")
+class snake(animal):
+    def move(self):
+        print("i caan crawl")
+class dog(animal):
+    def move(self):
+        print("i can bark")
+class lion(animal):
+    def move(self):
+        print("i can roar")
+# driver code
+R = human()
+R.move()
 
-    # private var
-    _privatevar = 27;
-    
-    #private method
-    def __priMeth(self):
-        print("i am inside class myClass")
+k = snake()
+k.move()
 
-    def hello(self):
-        print("private varieble value: ",myclass.__privatevar)
+R = dog()
+R.move()
 
-
-foo = myclass()
-foo.hello()
-foo._priMeth
+k = lion()
+k.move()
