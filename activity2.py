@@ -1,17 +1,30 @@
-class computer:
-    def __init__(self):
-        self.__maxprice = 900
-    def sell(self):
-        print("selling price: {}".format(self.__maxprice))
-    def setMaxprice(self, price):
-        self.__maxprice = price
-c = computer()
-c.sell()
+# Class 1
+class India():
+    def capital(self):
+        print("New Delhi is the capital of India.")
+ 
+    def language(self):
+        print("Hindi is the most widely spoken language of India.")
+ 
+    def type(self):
+        print("India is a developing country.")
+# Class 2
+class USA():
+    def capital(self):
+        print("Washington, D.C. is the capital of USA.")
+ 
+    def language(self):
+        print("English is the primary language of USA.")
+ 
+    def type(self):
+        print("USA is a developed country.")
+ 
+# Object Creation
+obj_ind = India()
+obj_usa = USA()
 
-# change the price
-c.__maxprice = 1000
-c.sell()
-
-# using setter function
-c.setMaxprice(1000)
-c.sell()
+# Common Interface
+for country in (obj_ind, obj_usa):
+    country.capital()
+    country.language()
+    country.type()
